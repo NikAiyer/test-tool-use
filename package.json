@@ -1,0 +1,48 @@
+{
+  "name": "test-tool-use",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "mastra dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@ai-sdk/anthropic": "^1.1.17",
+    "@ai-sdk/cohere": "latest",
+    "@ai-sdk/deepinfra": "^0.1.16",
+    "@ai-sdk/deepseek": "^0.1.15",
+    "@ai-sdk/google": "^1.1.25",
+    "@ai-sdk/groq": "^1.1.14",
+    "@ai-sdk/mistral": "^1.1.17",
+    "@ai-sdk/openai": "^1.2.0",
+    "@ai-sdk/perplexity": "^1.0.7",
+    "@mastra/chroma": "file:../mastra/stores/chroma",
+    "@mastra/core": "file:../mastra/packages/core",
+    "@mastra/deployer": "file:../mastra/packages/deployer",
+    "@mastra/evals": "file:../mastra/packages/evals",
+    "@mastra/pg": "file:../mastra/stores/pg",
+    "@mastra/rag": "file:../mastra/packages/rag",
+    "@tensorflow/tfjs-node": "^4.17.0",
+    "@vercel/otel": "^1.10.1",
+    "@xenova/transformers": "^2.15.0",
+    "ai": "latest",
+    "langfuse": "^3.36.0",
+    "langfuse-vercel": "^3.36.0",
+    "langsmith": "^0.3.11",
+    "mastra": "^0.2.8",
+    "sharp": "^0.33.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "ollama-ai-provider": "^1.2.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.3"
+  }
+}
