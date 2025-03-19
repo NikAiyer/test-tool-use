@@ -1,15 +1,18 @@
 import { openai } from "@ai-sdk/openai";
 import { createVectorQueryTool } from "@mastra/rag";
 import { Agent } from "@mastra/core/agent";
-import * as models from "../../models";
-
+import { allModels } from "../../models";
 /**
  * Create a RAG agent with the specified model
  * @param modelName Name of the model to use (from models/index.ts)
  * @param enableFilter Whether to enable filtering in the vector query tool
  * @returns Agent instance
  */
-export function createRagAgent(modelName: string, enableFilter: boolean, instructions: string) {
+export function createRagAgent(
+  modelName: string,
+  enableFilter: boolean,
+  instructions: string
+) {
   const vectorQueryTool = createVectorQueryTool({
     vectorStoreName: "pgVector",
     indexName: "testing",
@@ -17,7 +20,7 @@ export function createRagAgent(modelName: string, enableFilter: boolean, instruc
     enableFilter: enableFilter,
   });
   // @ts-ignore - Dynamic access
-  const model = models[modelName] || models.ollama31Model;
+  const model = allModels[modelName];
 
   return new Agent({
     name: "Search Agent",

@@ -38,53 +38,63 @@ export const Ollama = {
 
 // OpenAI Models
 export const OpenAI = {
-  gpt4: openai('gpt-4'),  // Full tool/function calling support
+  gpt4: openai("gpt-4"), // Full tool/function calling support
   gpt4oMini: openai("gpt-4o-mini"),
-  gpt4o: openai('gpt-4o'),
-  gpt4Turbo: openai('gpt-4-turbo-preview'),  // Full tool/function calling support
-  gpt35Turbo: openai('gpt-3.5-turbo'),  // Full tool/function calling support
-}
-// Anthropic Models
+  gpt4o: openai("gpt-4o"),
+  gpt4Turbo: openai("gpt-4-turbo-preview"), // Full tool/function calling support
+  gpt35Turbo: openai("gpt-3.5-turbo"), // Full tool/function calling support
+};
+// // Anthropic Models
 export const Anthropic = {
   claude3Opus: anthropic("claude-3-opus-20240229"), // Full tool/function calling support
   claude3Sonnet: anthropic("claude-3-sonnet-20240229"), // Full tool/function calling support
 };
 
-// Cohere Models
+// // Cohere Models
 export const Cohere = {
   cohereCommandR: cohere("command-r"), // Has function calling support
 };
 
-// Google Models
+// // Google Models
 export const Google = {
   gemini15Pro: google("gemini-1.5-pro"), // Has function calling support
   gemini15Flash: google("gemini-1.5-flash"), // Has function calling support
 };
 
-// Groq Models
+// // Groq Models
 export const Groq = {
   groqMixtral: groq("mixtral-8x7b-32768"), // Has function calling support
 };
 
-// Perplexity Models
+// // Perplexity Models
 export const Perplexity = {
   sonarPro: perplexity("sonar-pro"), // 200k context
   sonarReasoning: perplexity("sonar-reasoning"), // 128k context
   sonarReasoningPro: perplexity("sonar-reasoning-pro"),
   sonar: perplexity("sonar"), // 128k context
 };
-// DeepInfra Models
+// // DeepInfra Models
 export const DeepInfra = {
   deepinfraMistral: deepinfra("mistralai/Mistral-7B-Instruct-v0.2"),
   deepinfraMixtral: deepinfra("mistralai/Mixtral-8x7B-Instruct-v0.1"),
-  deepinfraLlama: deepinfra('meta-llama/Llama-2-70b-chat-hf')
+  deepinfraLlama: deepinfra("meta-llama/Llama-2-70b-chat-hf"),
 };
 
-// DeepSeek Models
+// // DeepSeek Models
 export const DeepSeek = {
-  deepseekCoder: deepseek('deepseek-coder'),
-  deepseekChat: deepseek('deepseek-chat'),
-}
+  deepseekCoder: deepseek("deepseek-coder"),
+  deepseekChat: deepseek("deepseek-chat"),
+};
+
+export const allModels = {
+  ...Ollama,
+  ...OpenAI,
+  ...Anthropic,
+  ...Cohere,
+  ...Google,
+  ...Groq,
+  ...Perplexity,
+};
 
 
 // Mistral AI Models - Currently unavailable

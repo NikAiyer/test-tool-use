@@ -4,8 +4,6 @@ import { filterQuery, query, ragMastra } from "./testSetup";
 
 const modelNames = Object.keys(models);
 
-console.log(modelNames)
-
 // Results storage
 interface TestResult {
   company: string;
@@ -190,7 +188,7 @@ function generateSummary() {
   for (const result of results) {
     const successStatus = result.success ? chalk.green("✓") : chalk.red("✗");
     const error = result.error ? chalk.red(result.error.substring(0, 50) + "...") : "";
-    const config = `Filter: ${result.filter ? '✓' : '✗'}`;
+    const config = `Filter is ${result.filter ? "enabled" : "not enabled"}`;
     
     console.log(`| ${result.company} | ${result.modelName} | ${result.instructionType} | ${config} | ${successStatus} | ${error} |`);
   }
