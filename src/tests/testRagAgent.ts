@@ -194,7 +194,9 @@ async function runModelTests(modelName: string, company: string) {
   // Run tests with different configurations
   for (const config of configs) {
     console.log(
-      chalk.yellow(`\n--- Testing ${config.label} Configuration ---`)
+      chalk.yellow(
+        `\n--- Testing ${config.label} Configuration with ${config.instructionType} Instructions ---`
+      )
     );
 
     // Test with basic query
