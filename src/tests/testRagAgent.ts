@@ -86,6 +86,7 @@ async function testModel(
       modelName,
       success: false,
       error: error instanceof Error ? error.message : String(error),
+      filter: enableFilter,
       instructionType,
     };
   }
@@ -163,6 +164,7 @@ async function testModelWithFilter(
       success: false,
       error: error instanceof Error ? error.message : String(error),
       instructionType,
+      filter: enableFilter,
     };
   }
 }

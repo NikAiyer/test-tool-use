@@ -1,0 +1,41 @@
+LLM Tool Usage Patterns:
+GPT-4 excels at complex tool orchestration.
+Claude-3 handles multi-step tool sequences effectively.
+Mistral models show varied tool usage capabilities.
+LLama2 requires specific tool calling formats.
+Anthropic models support native tool integration.
+
+RAG System Architecture:
+Vector stores optimize similarity search.
+Chroma DB enables efficient embedding storage.
+Pinecone supports real-time vector updates.
+Weaviate offers hybrid search capabilities.
+PGVector provides SQL-based vector operations.
+
+Testing Framework Design:
+LangSmith tracks LLM chain executions.
+LangFuse enables detailed run analysis.
+MLflow manages experiment tracking.
+Weights & Biases visualizes test results.
+Promptfoo automates prompt testing.
+
+Model Performance Metrics:
+Response latency varies by model size.
+Token throughput affects system scalability.
+Context window limits impact RAG design.
+Function calling adds overhead to responses.
+Batch processing improves overall throughput.
+
+Deployment Considerations:
+Load balancing distributes model requests.
+API rate limits affect system design.
+Caching reduces redundant computations.
+Failover systems ensure high availability.
+Resource scaling handles traffic spikes.
+
+Evaluation Methods:
+RAGAS scores measure retrieval quality.
+BLEU evaluates response coherence.
+ROUGE assesses answer completeness.
+F1 scores quantify accuracy metrics.
+Human feedback calibrates automated tests.
