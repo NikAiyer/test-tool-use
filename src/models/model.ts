@@ -86,16 +86,6 @@ export const DeepSeek = {
   deepseekChat: deepseek("deepseek-chat"),
 };
 
-export const allModels = {
-  ...Ollama,
-  ...OpenAI,
-  ...Anthropic,
-  ...Cohere,
-  ...Google,
-  ...Groq,
-  ...Perplexity,
-};
-
 
 // Mistral AI Models - Currently unavailable
 // export const mistralTiny = mistral('mistral-tiny');

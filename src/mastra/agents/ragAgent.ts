@@ -1,7 +1,7 @@
 import { openai } from "@ai-sdk/openai";
 import { createVectorQueryTool } from "@mastra/rag";
 import { Agent } from "@mastra/core/agent";
-import { allModels } from "../../models";
+import { allModels } from "../../models/allModels";
 /**
  * Create a RAG agent with the specified model
  * @param modelName Name of the model to use (from models/index.ts)

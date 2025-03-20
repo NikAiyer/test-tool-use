@@ -1,10 +1,10 @@
 import { Mastra } from "@mastra/core";
-import * as models from "../models";
+import * as models from "../models/model";
 import { createRagAgent } from "../mastra/agents/ragAgent";
 import { Agent } from "@mastra/core/agent";
 import { PgVector } from "@mastra/pg";
 import { PGVECTOR_PROMPT } from "@mastra/rag";
-import { allModels } from "../models";
+import { allModels } from "../models/allModels";
 
 const pgVector = new PgVector(process.env.POSTGRES_CONNECTION_STRING!);
 
