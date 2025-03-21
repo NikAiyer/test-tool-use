@@ -250,8 +250,10 @@ function generateSummary() {
   for (const result of results) {
     const successStatus = result.success ? chalk.green("✓") : chalk.red("✗");
     const error = result.error
-      ? chalk.red(result.error.substring(0, 50) + "...")
-      : "";
+      ? chalk.red(result.error)
+      : !result.response
+        ? chalk.red("No response")
+        : "";
     const config = `Filter is ${result.filter ? "enabled" : "not enabled"}`;
 
     console.log(

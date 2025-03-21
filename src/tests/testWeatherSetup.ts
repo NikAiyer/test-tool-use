@@ -8,7 +8,8 @@ const pgVector = new PgVector(process.env.POSTGRES_CONNECTION_STRING!);
 
 const agentMap: Record<string, Agent> = {};
 
-export const query = "What is the weather in New York?";
+export const query =
+  "What is the weather in New York? Use the tool to get the weather.";
 
 for (const modelName of Object.keys(allModels)) {
   // Create agents with different instruction sets

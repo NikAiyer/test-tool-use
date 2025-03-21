@@ -1,0 +1,314 @@
+| Company | Model | Instructions | Config | Success | Error |
+| ------- | ----- | ------------ | ------ | ------- | ----- |
+| Anthropic | claude-3-opus-20240229 | Basic | Filter is not enabled | ✗ |  |
+| Anthropic | claude-3-opus-20240229 (with filter) | Basic | Filter is not enabled | ✓ |  |
+| Anthropic | claude-3-opus-20240229 | Detailed | Filter is not enabled | ✗ |  |
+| Anthropic | claude-3-opus-20240229 (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| Anthropic | claude-3-opus-20240229 | Basic | Filter is enabled | ✗ |  |
+| Anthropic | claude-3-opus-20240229 (with filter) | Basic | Filter is enabled | ✓ |  |
+| Anthropic | claude-3-opus-20240229 | Detailed | Filter is enabled | ✗ |  |
+| Anthropic | claude-3-opus-20240229 (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Anthropic | claude-3-sonnet-20240229 | Basic | Filter is not enabled | ✓ |  |
+| Anthropic | claude-3-sonnet-20240229 (with filter) | Basic | Filter is not enabled | ✓ |  |
+| Anthropic | claude-3-sonnet-20240229 | Detailed | Filter is not enabled | ✓ |  |
+| Anthropic | claude-3-sonnet-20240229 (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| Anthropic | claude-3-sonnet-20240229 | Basic | Filter is enabled | ✓ |  |
+| Anthropic | claude-3-sonnet-20240229 (with filter) | Basic | Filter is enabled | ✓ |  |
+| Anthropic | claude-3-sonnet-20240229 | Detailed | Filter is enabled | ✓ |  |
+| Anthropic | claude-3-sonnet-20240229 (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Cohere | command-r | Basic | Filter is not enabled | ✓ |  |
+| Cohere | command-r (with filter) | Basic | Filter is not enabled | ✓ |  |
+| Cohere | command-r | Detailed | Filter is not enabled | ✓ |  |
+| Cohere | command-r (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| Cohere | command-r | Basic | Filter is enabled | ✓ |  |
+| Cohere | command-r (with filter) | Basic | Filter is enabled | ✗ | your request resulted in an invalid generation. Try updating the messages or tool definitions. |
+| Cohere | command-r | Detailed | Filter is enabled | ✓ |  |
+| Cohere | command-r (with filter) | Detailed | Filter is enabled | ✗ | your request resulted in an invalid generation. Try updating the messages or tool definitions. |
+| DeepInfra | mistral-7b-instruct-v0.2 | Basic | Filter is not enabled | ✗ |  |
+| DeepInfra | mistral-7b-instruct-v0.2 (with filter) | Basic | Filter is not enabled | ✗ |  |
+| DeepInfra | mistral-7b-instruct-v0.2 | Detailed | Filter is not enabled | ✓ |  |
+| DeepInfra | mistral-7b-instruct-v0.2 (with filter) | Detailed | Filter is not enabled | ✗ |  |
+| DeepInfra | mistral-7b-instruct-v0.2 | Basic | Filter is enabled | ✗ |  |
+| DeepInfra | mistral-7b-instruct-v0.2 (with filter) | Basic | Filter is enabled | ✗ |  |
+| DeepInfra | mistral-7b-instruct-v0.2 | Detailed | Filter is enabled | ✗ |  |
+| DeepInfra | mistral-7b-instruct-v0.2 (with filter) | Detailed | Filter is enabled | ✗ |  |
+| DeepInfra | mixtral-8x7b-instruct-v0.1 | Basic | Filter is not enabled | ✗ |  |
+| DeepInfra | mixtral-8x7b-instruct-v0.1 (with filter) | Basic | Filter is not enabled | ✗ |  |
+| DeepInfra | mixtral-8x7b-instruct-v0.1 | Detailed | Filter is not enabled | ✗ |  |
+| DeepInfra | mixtral-8x7b-instruct-v0.1 (with filter) | Detailed | Filter is not enabled | ✗ |  |
+| DeepInfra | mixtral-8x7b-instruct-v0.1 | Basic | Filter is enabled | ✗ |  |
+| DeepInfra | mixtral-8x7b-instruct-v0.1 (with filter) | Basic | Filter is enabled | ✗ |  |
+| DeepInfra | mixtral-8x7b-instruct-v0.1 | Detailed | Filter is enabled | ✗ |  |
+| DeepInfra | mixtral-8x7b-instruct-v0.1 (with filter) | Detailed | Filter is enabled | ✗ |  |
+| DeepInfra | llama-2-70b-chat-hf | Basic | Filter is not enabled | ✓ |  |
+| DeepInfra | llama-2-70b-chat-hf (with filter) | Basic | Filter is not enabled | ✓ |  |
+| DeepInfra | llama-2-70b-chat-hf | Detailed | Filter is not enabled | ✓ |  |
+| DeepInfra | llama-2-70b-chat-hf (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| DeepInfra | llama-2-70b-chat-hf | Basic | Filter is enabled | ✓ |  |
+| DeepInfra | llama-2-70b-chat-hf (with filter) | Basic | Filter is enabled | ✗ |  |
+| DeepInfra | llama-2-70b-chat-hf | Detailed | Filter is enabled | ✓ |  |
+| DeepInfra | llama-2-70b-chat-hf (with filter) | Detailed | Filter is enabled | ✓ |  |
+| DeepSeek | deepseek-coder | Basic | Filter is not enabled | ✓ |  |
+| DeepSeek | deepseek-coder (with filter) | Basic | Filter is not enabled | ✓ | No response |
+| DeepSeek | deepseek-coder | Detailed | Filter is not enabled | ✓ |  |
+| DeepSeek | deepseek-coder (with filter) | Detailed | Filter is not enabled | ✓ | No response |
+| DeepSeek | deepseek-coder | Basic | Filter is enabled | ✓ | No response |
+| DeepSeek | deepseek-coder (with filter) | Basic | Filter is enabled | ✓ | No response |
+| DeepSeek | deepseek-coder | Detailed | Filter is enabled | ✓ | No response |
+| DeepSeek | deepseek-coder (with filter) | Detailed | Filter is enabled | ✓ |  |
+| DeepSeek | deepseek-chat | Basic | Filter is not enabled | ✓ |  |
+| DeepSeek | deepseek-chat (with filter) | Basic | Filter is not enabled | ✗ | |
+| DeepSeek | deepseek-chat | Detailed | Filter is not enabled | ✓ |  |
+| DeepSeek | deepseek-chat (with filter) | Detailed | Filter is not enabled | ✓ | No response |
+| DeepSeek | deepseek-chat | Basic | Filter is enabled | ✓ | No response |
+| DeepSeek | deepseek-chat (with filter) | Basic | Filter is enabled | ✓ | No response |
+| DeepSeek | deepseek-chat | Detailed | Filter is enabled | ✓ |  |
+| DeepSeek | deepseek-chat (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Google | gemini-1.5-pro | Basic | Filter is not enabled | ✓ |  |
+| Google | gemini-1.5-pro (with filter) | Basic | Filter is not enabled | ✓ |  |
+| Google | gemini-1.5-pro | Detailed | Filter is not enabled | ✓ |  |
+| Google | gemini-1.5-pro (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| Google | gemini-1.5-pro | Basic | Filter is enabled | ✓ |  |
+| Google | gemini-1.5-pro (with filter) | Basic | Filter is enabled | ✓ |  |
+| Google | gemini-1.5-pro | Detailed | Filter is enabled | ✓ |  |
+| Google | gemini-1.5-pro (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Google | gemini-1.5-flash | Basic | Filter is not enabled | ✓ |  |
+| Google | gemini-1.5-flash (with filter) | Basic | Filter is not enabled | ✗ |  |
+| Google | gemini-1.5-flash | Detailed | Filter is not enabled | ✓ |  |
+| Google | gemini-1.5-flash (with filter) | Detailed | Filter is not enabled | ✗ |  |
+| Google | gemini-1.5-flash | Basic | Filter is enabled | ✓ |  |
+| Google | gemini-1.5-flash (with filter) | Basic | Filter is enabled | ✓ |  |
+| Google | gemini-1.5-flash | Detailed | Filter is enabled | ✓ |  |
+| Google | gemini-1.5-flash (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Groq | mixtral-8x7b-32768 | Basic | Filter is not enabled | ✗ |  |
+| Groq | mixtral-8x7b-32768 (with filter) | Basic | Filter is not enabled | ✓ |  |
+| Groq | mixtral-8x7b-32768 | Detailed | Filter is not enabled | ✓ |  |
+| Groq | mixtral-8x7b-32768 (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| Groq | mixtral-8x7b-32768 | Basic | Filter is enabled | ✓ |  |
+| Groq | mixtral-8x7b-32768 (with filter) | Basic | Filter is enabled | ✓ |  |
+| Groq | mixtral-8x7b-32768 | Detailed | Filter is enabled | ✓ |  |
+| Groq | mixtral-8x7b-32768 (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Ollama | llama3.2 | Basic | Filter is not enabled | ✓ |  |
+| Ollama | llama3.2 (with filter) | Basic | Filter is not enabled | ✓ |  |
+| Ollama | llama3.2 | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | llama3.2 (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | llama3.2 | Basic | Filter is enabled | ✓ |  |
+| Ollama | llama3.2 (with filter) | Basic | Filter is enabled | ✓ |  |
+| Ollama | llama3.2 | Detailed | Filter is enabled | ✓ |  |
+| Ollama | llama3.2 (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Ollama | llama3.1 | Basic | Filter is not enabled | ✓ |  |
+| Ollama | llama3.1 (with filter) | Basic | Filter is not enabled | ✓ |  |
+| Ollama | llama3.1 | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | llama3.1 (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | llama3.1 | Basic | Filter is enabled | ✓ |  |
+| Ollama | llama3.1 (with filter) | Basic | Filter is enabled | ✓ |  |
+| Ollama | llama3.1 | Detailed | Filter is enabled | ✓ |  |
+| Ollama | llama3.1 (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Ollama | qwen2.5:7b | Basic | Filter is not enabled | ✓ |  |
+| Ollama | qwen2.5:7b (with filter) | Basic | Filter is not enabled | ✓ |  |
+| Ollama | qwen2.5:7b | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | qwen2.5:7b (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | qwen2.5:7b | Basic | Filter is enabled | ✓ |  |
+| Ollama | qwen2.5:7b (with filter) | Basic | Filter is enabled | ✓ |  |
+| Ollama | qwen2.5:7b | Detailed | Filter is enabled | ✓ |  |
+| Ollama | qwen2.5:7b (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Ollama | mistral | Basic | Filter is not enabled | ✗ |  |
+| Ollama | mistral (with filter) | Basic | Filter is not enabled | ✗ |  |
+| Ollama | mistral | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | mistral (with filter) | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | mistral | Basic | Filter is enabled | ✗ |  |
+| Ollama | mistral (with filter) | Basic | Filter is enabled | ✗ |  |
+| Ollama | mistral | Detailed | Filter is enabled | ✗ |  |
+| Ollama | mistral (with filter) | Detailed | Filter is enabled | ✗ |  |
+| Ollama | mistral-nemo | Basic | Filter is not enabled | ✓ |  |
+| Ollama | mistral-nemo (with filter) | Basic | Filter is not enabled | ✓ |  |
+| Ollama | mistral-nemo | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | mistral-nemo (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | mistral-nemo | Basic | Filter is enabled | ✓ |  |
+| Ollama | mistral-nemo (with filter) | Basic | Filter is enabled | ✓ |  |
+| Ollama | mistral-nemo | Detailed | Filter is enabled | ✓ |  |
+| Ollama | mistral-nemo (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Ollama | smollm2 | Basic | Filter is not enabled | ✓ | No response |
+| Ollama | smollm2 (with filter) | Basic | Filter is not enabled | ✓ | No response |
+| Ollama | smollm2 | Detailed | Filter is not enabled | ✓ | No response |
+| Ollama | smollm2 (with filter) | Detailed | Filter is not enabled | ✓ | No response |
+| Ollama | smollm2 | Basic | Filter is enabled | ✓ |  |
+| Ollama | smollm2 (with filter) | Basic | Filter is enabled | ✓ | No response |
+| Ollama | smollm2 | Detailed | Filter is enabled | ✓ |  |
+| Ollama | smollm2 (with filter) | Detailed | Filter is enabled | ✓ | No response |
+| Ollama | granite3.1-dense | Basic | Filter is not enabled | ✗ |  |
+| Ollama | granite3.1-dense (with filter) | Basic | Filter is not enabled | ✓ |  |
+| Ollama | granite3.1-dense | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | granite3.1-dense (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | granite3.1-dense | Basic | Filter is enabled | ✗ | Model tried to call unavailable tool 'FakeWrite'. Available tools: vectorQueryTool. |
+| Ollama | granite3.1-dense (with filter) | Basic | Filter is enabled | ✓ |  |
+| Ollama | granite3.1-dense | Detailed | Filter is enabled | ✗ |  |
+| Ollama | granite3.1-dense (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Ollama | nemotron-mini | Basic | Filter is not enabled | ✗ |  |
+| Ollama | nemotron-mini (with filter) | Basic | Filter is not enabled | ✗ |  |
+| Ollama | nemotron-mini | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | nemotron-mini (with filter) | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | nemotron-mini | Basic | Filter is enabled | ✗ |  |
+| Ollama | nemotron-mini (with filter) | Basic | Filter is enabled | ✗ |  |
+| Ollama | nemotron-mini | Detailed | Filter is enabled | ✗ |  |
+| Ollama | nemotron-mini (with filter) | Detailed | Filter is enabled | ✗ |  |
+| Ollama | hermes3 | Basic | Filter is not enabled | ✗ |  |
+| Ollama | hermes3 (with filter) | Basic | Filter is not enabled | ✓ |  |
+| Ollama | hermes3 | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | hermes3 (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | hermes3 | Basic | Filter is enabled | ✗ |  |
+| Ollama | hermes3 (with filter) | Basic | Filter is enabled | ✓ |  |
+| Ollama | hermes3 | Detailed | Filter is enabled | ✗ |  |
+| Ollama | hermes3 (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Ollama | mistral-small | Basic | Filter is not enabled | ✓ |  |
+| Ollama | mistral-small (with filter) | Basic | Filter is not enabled | ✓ |  |
+| Ollama | mistral-small | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | mistral-small (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | mistral-small | Basic | Filter is enabled | ✓ |  |
+| Ollama | mistral-small (with filter) | Basic | Filter is enabled | ✓ |  |
+| Ollama | mistral-small | Detailed | Filter is enabled | ✓ |  |
+| Ollama | mistral-small (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Ollama | granite3-dense | Basic | Filter is not enabled | ✗ |  |
+| Ollama | granite3-dense (with filter) | Basic | Filter is not enabled | ✗ |  |
+| Ollama | granite3-dense | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | granite3-dense (with filter) | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | granite3-dense | Basic | Filter is enabled | ✗ |  |
+| Ollama | granite3-dense (with filter) | Basic | Filter is enabled | ✗ |  |
+| Ollama | granite3-dense | Detailed | Filter is enabled | ✗ |  |
+| Ollama | granite3-dense (with filter) | Detailed | Filter is enabled | ✗ |  |
+| Ollama | llama3-groq-tool-use | Basic | Filter is not enabled | ✗ |  |
+| Ollama | llama3-groq-tool-use (with filter) | Basic | Filter is not enabled | ✗ |  |
+| Ollama | llama3-groq-tool-use | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | llama3-groq-tool-use (with filter) | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | llama3-groq-tool-use | Basic | Filter is enabled | ✗ |  |
+| Ollama | llama3-groq-tool-use (with filter) | Basic | Filter is enabled | ✓ |  |
+| Ollama | llama3-groq-tool-use | Detailed | Filter is enabled | ✗ |  |
+| Ollama | llama3-groq-tool-use (with filter) | Detailed | Filter is enabled | ✗ |  |
+| Ollama | aya-expanse | Basic | Filter is not enabled | ✓ |  |
+| Ollama | aya-expanse (with filter) | Basic | Filter is not enabled | ✓ |  |
+| Ollama | aya-expanse | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | aya-expanse (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | aya-expanse | Basic | Filter is enabled | ✓ |  |
+| Ollama | aya-expanse (with filter) | Basic | Filter is enabled | ✓ |  |
+| Ollama | aya-expanse | Detailed | Filter is enabled | ✓ |  |
+| Ollama | aya-expanse (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Ollama | granite3-moe | Basic | Filter is not enabled | ✗ |  |
+| Ollama | granite3-moe (with filter) | Basic | Filter is not enabled | ✗ |  |
+| Ollama | granite3-moe | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | granite3-moe (with filter) | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | granite3-moe | Basic | Filter is enabled | ✗ |  |
+| Ollama | granite3-moe (with filter) | Basic | Filter is enabled | ✗ |  |
+| Ollama | granite3-moe | Detailed | Filter is enabled | ✗ |  |
+| Ollama | granite3-moe (with filter) | Detailed | Filter is enabled | ✗ |  |
+| Ollama | granite3.1-moe | Basic | Filter is not enabled | ✗ |  |
+| Ollama | granite3.1-moe (with filter) | Basic | Filter is not enabled | ✗ |  |
+| Ollama | granite3.1-moe | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | granite3.1-moe (with filter) | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | granite3.1-moe | Basic | Filter is enabled | ✗ |  |
+| Ollama | granite3.1-moe (with filter) | Basic | Filter is enabled | ✗ |  |
+| Ollama | granite3.1-moe | Detailed | Filter is enabled | ✗ |  |
+| Ollama | granite3.1-moe (with filter) | Detailed | Filter is enabled | ✗ |  |
+| Ollama | command-r7b | Basic | Filter is not enabled | ✗ |  |
+| Ollama | command-r7b (with filter) | Basic | Filter is not enabled | ✗ |  |
+| Ollama | command-r7b | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | command-r7b (with filter) | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | command-r7b | Basic | Filter is enabled | ✗ |  |
+| Ollama | command-r7b (with filter) | Basic | Filter is enabled | ✗ |  |
+| Ollama | command-r7b | Detailed | Filter is enabled | ✗ |  |
+| Ollama | command-r7b (with filter) | Detailed | Filter is enabled | ✗ |  |
+| Ollama | qwen2 | Basic | Filter is not enabled | ✓ |  |
+| Ollama | qwen2 (with filter) | Basic | Filter is not enabled | ✓ |  |
+| Ollama | qwen2 | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | qwen2 (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | qwen2 | Basic | Filter is enabled | ✓ |  |
+| Ollama | qwen2 (with filter) | Basic | Filter is enabled | ✓ |  |
+| Ollama | qwen2 | Detailed | Filter is enabled | ✓ |  |
+| Ollama | qwen2 (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Ollama | qwen2.5 | Basic | Filter is not enabled | ✓ |  |
+| Ollama | qwen2.5 (with filter) | Basic | Filter is not enabled | ✓ |  |
+| Ollama | qwen2.5 | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | qwen2.5 (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | qwen2.5 | Basic | Filter is enabled | ✓ |  |
+| Ollama | qwen2.5 (with filter) | Basic | Filter is enabled | ✓ |  |
+| Ollama | qwen2.5 | Detailed | Filter is enabled | ✓ |  |
+| Ollama | qwen2.5 (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Ollama | granite3.2 | Basic | Filter is not enabled | ✗ |  |
+| Ollama | granite3.2 (with filter) | Basic | Filter is not enabled | ✓ |  |
+| Ollama | granite3.2 | Detailed | Filter is not enabled | ✗ |  |
+| Ollama | granite3.2 (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| Ollama | granite3.2 | Basic | Filter is enabled | ✗ |  |
+| Ollama | granite3.2 (with filter) | Basic | Filter is enabled | ✓ |  |
+| Ollama | granite3.2 | Detailed | Filter is enabled | ✗ |  |
+| Ollama | granite3.2 (with filter) | Detailed | Filter is enabled | ✗ |  |
+| OpenAI | gpt-4 | Basic | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-4 (with filter) | Basic | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-4 | Detailed | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-4 (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-4 | Basic | Filter is enabled | ✓ |  |
+| OpenAI | gpt-4 (with filter) | Basic | Filter is enabled | ✓ |  |
+| OpenAI | gpt-4 | Detailed | Filter is enabled | ✓ |  |
+| OpenAI | gpt-4 (with filter) | Detailed | Filter is enabled | ✓ |  |
+| OpenAI | gpt-4o-mini | Basic | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-4o-mini (with filter) | Basic | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-4o-mini | Detailed | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-4o-mini (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-4o-mini | Basic | Filter is enabled | ✓ |  |
+| OpenAI | gpt-4o-mini (with filter) | Basic | Filter is enabled | ✓ |  |
+| OpenAI | gpt-4o-mini | Detailed | Filter is enabled | ✓ |  |
+| OpenAI | gpt-4o-mini (with filter) | Detailed | Filter is enabled | ✓ |  |
+| OpenAI | gpt-4o | Basic | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-4o (with filter) | Basic | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-4o | Detailed | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-4o (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-4o | Basic | Filter is enabled | ✓ |  |
+| OpenAI | gpt-4o (with filter) | Basic | Filter is enabled | ✓ |  |
+| OpenAI | gpt-4o | Detailed | Filter is enabled | ✓ |  |
+| OpenAI | gpt-4o (with filter) | Detailed | Filter is enabled | ✓ |  |
+| OpenAI | gpt-4-turbo-preview | Basic | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-4-turbo-preview (with filter) | Basic | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-4-turbo-preview | Detailed | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-4-turbo-preview (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-4-turbo-preview | Basic | Filter is enabled | ✓ |  |
+| OpenAI | gpt-4-turbo-preview (with filter) | Basic | Filter is enabled | ✓ |  |
+| OpenAI | gpt-4-turbo-preview | Detailed | Filter is enabled | ✓ |  |
+| OpenAI | gpt-4-turbo-preview (with filter) | Detailed | Filter is enabled | ✓ |  |
+| OpenAI | gpt-3.5-turbo | Basic | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-3.5-turbo (with filter) | Basic | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-3.5-turbo | Detailed | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-3.5-turbo (with filter) | Detailed | Filter is not enabled | ✓ |  |
+| OpenAI | gpt-3.5-turbo | Basic | Filter is enabled | ✓ |  |
+| OpenAI | gpt-3.5-turbo (with filter) | Basic | Filter is enabled | ✓ |  |
+| OpenAI | gpt-3.5-turbo | Detailed | Filter is enabled | ✓ |  |
+| OpenAI | gpt-3.5-turbo (with filter) | Detailed | Filter is enabled | ✓ |  |
+| Perplexity | sonar-pro | Basic | Filter is not enabled | ✗ |  |
+| Perplexity | sonar-pro (with filter) | Basic | Filter is not enabled | ✗ |  |
+| Perplexity | sonar-pro | Detailed | Filter is not enabled | ✗ |  |
+| Perplexity | sonar-pro (with filter) | Detailed | Filter is not enabled | ✗ |  |
+| Perplexity | sonar-pro | Basic | Filter is enabled | ✗ |  |
+| Perplexity | sonar-pro (with filter) | Basic | Filter is enabled | ✗ |  |
+| Perplexity | sonar-pro | Detailed | Filter is enabled | ✗ |  |
+| Perplexity | sonar-pro (with filter) | Detailed | Filter is enabled | ✗ |  |
+| Perplexity | sonar-reasoning | Basic | Filter is not enabled | ✗ |  |
+| Perplexity | sonar-reasoning (with filter) | Basic | Filter is not enabled | ✗ |  |
+| Perplexity | sonar-reasoning | Detailed | Filter is not enabled | ✗ |  |
+| Perplexity | sonar-reasoning (with filter) | Detailed | Filter is not enabled | ✗ |  |
+| Perplexity | sonar-reasoning | Basic | Filter is enabled | ✗ |  |
+| Perplexity | sonar-reasoning (with filter) | Basic | Filter is enabled | ✗ |  |
+| Perplexity | sonar-reasoning | Detailed | Filter is enabled | ✗ |  |
+| Perplexity | sonar-reasoning (with filter) | Detailed | Filter is enabled | ✗ |  |
+| Perplexity | sonar-reasoning-pro | Basic | Filter is not enabled | ✗ |  |
+| Perplexity | sonar-reasoning-pro (with filter) | Basic | Filter is not enabled | ✗ |  |
+| Perplexity | sonar-reasoning-pro | Detailed | Filter is not enabled | ✗ |  |
+| Perplexity | sonar-reasoning-pro (with filter) | Detailed | Filter is not enabled | ✗ |  |
+| Perplexity | sonar-reasoning-pro | Basic | Filter is enabled | ✗ |  |
+| Perplexity | sonar-reasoning-pro (with filter) | Basic | Filter is enabled | ✗ |  |
+| Perplexity | sonar-reasoning-pro | Detailed | Filter is enabled | ✗ |  |
+| Perplexity | sonar-reasoning-pro (with filter) | Detailed | Filter is enabled | ✗ |  |
+| Perplexity | sonar | Basic | Filter is not enabled | ✗ |  |
+| Perplexity | sonar (with filter) | Basic | Filter is not enabled | ✗ |  |
+| Perplexity | sonar | Detailed | Filter is not enabled | ✗ |  |
+| Perplexity | sonar (with filter) | Detailed | Filter is not enabled | ✗ |  |
+| Perplexity | sonar | Basic | Filter is enabled | ✗ |  |
+| Perplexity | sonar (with filter) | Basic | Filter is enabled | ✗ |  |
+| Perplexity | sonar | Detailed | Filter is enabled | ✗ |  |
+| Perplexity | sonar (with filter) | Detailed | Filter is enabled | ✗ |  |

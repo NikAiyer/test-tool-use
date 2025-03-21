@@ -1,8 +1,9 @@
 import * as models from "../models/model";
 import chalk from "chalk";
 import { query, weatherMastra } from "./testWeatherSetup";
+import { allModels } from "../models/allModels";
 
-const modelNames = Object.keys(models);
+const modelNames = Object.keys(allModels);
 
 // Results storage
 interface TestResult {
@@ -109,8 +110,10 @@ function generateSummary() {
   for (const result of results) {
     const successStatus = result.success ? chalk.green("✓") : chalk.red("✗");
     const error = result.error
-      ? chalk.red(result.error.substring(0, 50) + "...")
-      : "";
+      ? chalk.red(result.error)
+      : !result.response
+        ? chalk.red("No response")
+        : "";
 
     console.log(
       `| ${result.company} | ${result.modelName} | ${successStatus} | ${error} |`
