@@ -1,12 +1,12 @@
 import "dotenv/config";
 
 import { MDocument } from "@mastra/rag";
-import { embed, embedMany } from "ai";
+import { embedMany } from "ai";
 import fs from "fs";
 import { openai } from "@ai-sdk/openai";
 import { PgVector } from "@mastra/pg";
 
-const content = fs.readFileSync("documents/test.txt", "utf-8");
+const content = fs.readFileSync("src/documents/test.txt", "utf-8");
 const doc = MDocument.fromText(content);
 
 console.log("chunking...");
@@ -63,6 +63,6 @@ await pgVector.upsert({
     text: chunk.text,
     ...categorizeContent(chunk.text),
     timestamp: new Date().toISOString(),
-    source: "tabnews.txt",
+    source: "test.txt",
   })),
 });
