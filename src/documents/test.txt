@@ -1,3 +1,5 @@
+TITLE: LLM Tool Usage Patterns
+
 LLM Tool Usage Patterns:
 GPT-4 excels at complex tool orchestration.
 Claude-3 handles multi-step tool sequences effectively.

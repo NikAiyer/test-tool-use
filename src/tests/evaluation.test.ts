@@ -6,7 +6,7 @@ import {
   TextualDifferenceMetric,
 } from "@mastra/evals/nlp";
 import { describe, expect, it } from "vitest";
-import { mastra } from "../..";
+import { mastra } from "../../";
 import dotenv from "dotenv";
 
 dotenv.config();

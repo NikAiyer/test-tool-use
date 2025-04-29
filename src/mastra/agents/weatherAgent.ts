@@ -24,3 +24,14 @@ export const createWeatherAgent = (modelName: string) => {
     tools: { weatherTool },
   });
 };
+
+// export const WeatherAgent = createWeatherAgent("gemini-2.5-pro-exp-03-25");
+
+// const stream = await WeatherAgent.stream(
+//   "What is the weather like in New York?"
+// );
+
+// for await (const chunk of stream.textStream) {
+//   console.log(chunk);
+// }
+  

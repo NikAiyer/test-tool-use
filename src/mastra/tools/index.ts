@@ -21,10 +21,11 @@ interface WeatherResponse {
 }
 
 export const weatherTool = createTool({
-  id: 'get-weather',
-  description: 'Get current weather for a location',
+  id: "get-weather",
+  description: "Get current weather for a location",
   inputSchema: z.object({
-    location: z.string().describe('City name'),
+    location: z.string().describe("City name"),
+    test: z.string().nullable(),
   }),
   outputSchema: z.object({
     temperature: z.number(),

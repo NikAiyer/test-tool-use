@@ -59,6 +59,7 @@ export const Cohere = {
 export const Google = {
   "gemini-1.5-pro": google("gemini-1.5-pro"), // Has function calling support
   "gemini-1.5-flash": google("gemini-1.5-flash"), // Has function calling support
+  "gemini-2.5-pro-exp-03-25": google("gemini-2.5-pro-exp-03-25"), // Has function calling support
 };
 
 // // Groq Models
