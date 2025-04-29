@@ -5,9 +5,7 @@ import { embedMany } from "ai";
 import fs from "fs";
 import { openai } from "@ai-sdk/openai";
 import { PgVector } from "@mastra/pg";
-import { ollama } from "ollama-ai-provider";
 import { ChromaVector } from "@mastra/chroma";
-import { google } from "@ai-sdk/google";
 
 const content = fs.readFileSync("src/documents/test.txt", "utf-8");
 const doc = MDocument.fromText(content);
@@ -22,24 +20,22 @@ console.log("chunking done");
 
 console.log("embedding...");
 const { embeddings } = await embedMany({
-  model: google.textEmbeddingModel("gemini-1.5-pro", {
-    outputDimensionality: 222,
-  }),
+  model: openai.embedding("text-embedding-3-small"),
   values: chunks.map((chunk) => chunk.text),
 });
 console.log("embedding done");
 
 console.log("pg...");
 const pgVector = new PgVector(process.env.POSTGRES_CONNECTION_STRING!);
-const chromaVector = new ChromaVector({
-  path: "http://localhost:8000",
-});
+// const chromaVector = new ChromaVector({
+//   path: "http://localhost:8000",
+// });
 
 console.log(embeddings[0].length);
 
 const indexName = "testing";
-await chromaVector.deleteIndex(indexName);
-await chromaVector.createIndex({
+await pgVector.deleteIndex(indexName);
+await pgVector.createIndex({
   indexName,
   dimension: 222,
 });
@@ -67,7 +63,7 @@ function categorizeContent(text: string): { category: string; topic: string } {
 }
 
 console.log("upserting...");
-await chromaVector.upsert({
+await pgVector.upsert({
   indexName,
   vectors: embeddings,
   metadata: chunks.map((chunk) => ({
